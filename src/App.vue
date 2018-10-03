@@ -1,6 +1,8 @@
+
 <template>
   <div id="app">
     <div id="nav">
+      <!-- Vue router links -->
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
@@ -8,7 +10,16 @@
   </div>
 </template>
 
-<style>
+<script>
+// import axios from 'axios';//
+  export default {
+  // Everything between these script tags is like a Javascript file
+  }
+</script>
+
+// It's like a CSS file, but on the same page
+// Stops CSS from cascading
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

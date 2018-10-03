@@ -5,6 +5,9 @@ import store from './store'
 
 Vue.config.productionTip = false
 
+//Must Have:
+// A render function (for rendering to the DOM)
+// 
 new Vue({
   router,
   store,

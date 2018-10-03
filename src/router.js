@@ -4,9 +4,11 @@ import Home from './views/Home.vue'
 
 Vue.use(Router)
 
+// Exports a Router object
 export default new Router({
   routes: [
     {
+      // Works very similar to react-router
       path: '/',
       name: 'home',
       component: Home
@@ -17,6 +19,8 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
+
+      // Performance enhancing syntax - Loads modules only when the route is loaded
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     }
   ]
